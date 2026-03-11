@@ -95,22 +95,14 @@ Topic mastery progression
 These signals help detect learning pattern drift.
 
 🏗 System Architecture
-Student / Educator
-        │
-        ▼
-React Frontend Dashboard
-        │
-        ▼
-Node.js Backend API
-        │
-        ▼
-Python ML Engine
-        │
-        ▼
-Concept Drift Detection Models
-        │
-        ▼
-Analytics & Insights
+
+
+<img width="326" height="564" alt="image" src="https://github.com/user-attachments/assets/d665c018-5890-49e3-aed5-10a8d43321b3" />
+
+
+
+
+
 ⚙️ Technology Stack
 Frontend
 
@@ -172,25 +164,12 @@ Learning velocity
 Topic progression
 
 📂 Project Structure
-EduDrift-AI
-│
-├── src
-│   ├── components
-│   ├── pages
-│   ├── dashboard
-│   ├── analytics
-│   └── visualizations
-│
-├── backend
-│   ├── api routes
-│   └── server logic
-│
-├── ml-engine
-│   ├── drift detection models
-│   ├── behavioral analytics
-│   └── prediction modules
-│
-└── README.md
+
+<img width="430" height="540" alt="image" src="https://github.com/user-attachments/assets/c074de97-4095-4fc7-8ebf-50d5fc807683" />
+
+
+
+
 🚧 Current Status
 
 The repository currently hosts the frontend prototype deployed on Vercel.
