@@ -1,112 +1,104 @@
-EduDrift AI
+🚀 EduDrift AI
+Concept Drift Detection for Student Learning Behavior
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/49b5c5ab-2691-4599-a28d-1f3336267c90" />
 
-Concept Drift Detection System for Student Learning Behavior
 
-🌐 Live Demo: https://edudrift-ai.vercel.app
 
-EduDrift AI is an intelligent learning analytics platform designed to detect concept drift in student learning behavior. It analyzes how students interact with educational content over time and identifies when their learning patterns change.
+🌐 Live Demo
+https://edudrift-ai.vercel.app
 
-Instead of evaluating students only based on final scores, EduDrift focuses on behavioral learning signals, enabling early detection of struggles, disengagement, or improvement.
+EduDrift AI is an intelligent learning analytics platform designed to detect concept drift in student learning behavior.
 
-This allows educators to intervene at the right moment and personalize learning paths.
+Traditional learning systems evaluate students mainly using final scores. However, learning behavior changes over time. Students may improve, struggle, or disengage.
 
-Problem Statement
+EduDrift analyzes behavioral learning patterns and detects these changes early using AI-driven drift detection techniques.
 
-Modern digital learning platforms generate massive amounts of interaction data:
+📌 Problem
+
+Online learning platforms generate large amounts of student interaction data such as:
 
 Quiz attempts
 
 Coding exercise submissions
 
-Assignment completion patterns
-
-Time spent on questions
+Time spent per question
 
 Accuracy trends
 
-However, most learning systems analyze only final performance metrics.
+Assignment completion behavior
 
-They fail to detect concept drift, where a student's learning behavior gradually changes due to:
+Despite this rich data, most platforms only analyze final performance metrics.
 
-Difficulty understanding new topics
+This leads to several problems:
 
-Cognitive overload
+Struggling students are detected too late
 
-Lack of engagement
+Educators lack behavioral insights
 
-Sudden improvement after mastering concepts
+Learning personalization becomes difficult
 
-Without detecting these changes early, educators miss opportunities to provide timely support.
+The missing component is Concept Drift Detection in learning behavior.
 
-Solution
+💡 Solution
 
-EduDrift AI introduces a learning behavior drift detection system that continuously monitors student activity and detects shifts in learning patterns.
+EduDrift AI introduces a system that continuously analyzes student learning interactions and detects when their learning behavior changes.
 
 The system:
 
-Tracks learning interaction data
+Collects interaction data
 
 Extracts behavioral features
 
-Applies drift detection algorithms
+Detects drift in learning patterns
 
-Identifies behavioral pattern shifts
-
-Generates analytics and alerts for educators
+Generates insights and visual analytics
 
 This enables real-time adaptive learning insights.
 
-Key Features
-AI-Driven Learning Behavior Analysis
-
-Analyzes how students solve problems, not just whether they get them right.
-
-Concept Drift Detection
-
-Identifies changes in learning patterns over time.
-
-Interactive Analytics Dashboard
-
-Visualizes student progress using:
-
-Heatmaps
-
-Behavioral trend graphs
-
-Performance analytics
-
-Student Learning Profile
-
-Each student develops a dynamic learning signature based on their behavior.
-
-Early Intervention Insights
-
-Educators can detect struggling students earlier.
-
-Live Demo
+🌐 Live Demo
 
 Frontend Interface:
 
 https://edudrift-ai.vercel.app
 
-The demo showcases:
+The demo includes:
 
 Student analytics dashboard
 
 Learning behavior heatmaps
 
+Performance trend graphs
+
 Concept drift indicators
 
-Interactive data visualization
+Interactive visualizations
 
-System Architecture
-User (Student / Educator)
+🧠 Core Idea
+
+EduDrift focuses on how students learn, not just their final scores.
+
+Key behavioral signals analyzed include:
+
+Response time changes
+
+Accuracy fluctuations
+
+Attempt frequency
+
+Learning speed
+
+Topic mastery progression
+
+These signals help detect learning pattern drift.
+
+🏗 System Architecture
+Student / Educator
         │
         ▼
 React Frontend Dashboard
         │
         ▼
-Node.js Backend API (planned)
+Node.js Backend API
         │
         ▼
 Python ML Engine
@@ -115,8 +107,8 @@ Python ML Engine
 Concept Drift Detection Models
         │
         ▼
-Analytics & Visualization
-Technology Stack
+Analytics & Insights
+⚙️ Technology Stack
 Frontend
 
 React
@@ -135,7 +127,7 @@ Node.js
 
 Express.js
 
-REST API
+REST APIs
 
 Machine Learning Engine
 
@@ -143,108 +135,105 @@ Python
 
 FastAPI
 
-Scikit-learn
-
 NumPy
 
 Pandas
 
-Algorithms & AI Concepts
+Scikit-learn
 
-EduDrift AI uses machine learning techniques to monitor changes in student learning patterns.
-
+📊 AI Algorithms Used
 Concept Drift Detection
 
-Detects when statistical properties of learning behavior change.
+Detects changes in statistical properties of student learning behavior.
 
 Adaptive Windowing (ADWIN)
 
-Maintains dynamic windows of student interaction data to detect behavioral changes.
+Maintains adaptive windows of data to detect behavior shifts.
 
 Sliding Window Analysis
 
-Continuously compares recent student behavior with historical patterns.
+Compares recent behavior with historical patterns.
 
 Behavioral Feature Extraction
 
-Extracted features include:
-
-Time spent per question
-
-Attempt frequency
+Key extracted features:
 
 Accuracy trends
 
+Response time
+
+Attempt count
+
 Learning velocity
 
-Concept mastery progression
+Topic progression
 
-Example Learning Behavior Signals
-
-The system analyzes metrics such as:
-
-Response time changes
-
-Sudden drop in accuracy
-
-Increased retries on similar questions
-
-Learning speed variation
-
-Topic-wise performance shifts
-
-These signals help detect learning drift patterns.
-
-Project Structure
+📂 Project Structure
 EduDrift-AI
 │
 ├── src
 │   ├── components
 │   ├── pages
+│   ├── dashboard
 │   ├── analytics
-│   ├── visualizations
-│   └── dashboard
+│   └── visualizations
 │
-├── backend (planned architecture)
+├── backend
+│   ├── api routes
+│   └── server logic
 │
 ├── ml-engine
 │   ├── drift detection models
-│   ├── analytics processing
-│   └── learning behavior analysis
+│   ├── behavioral analytics
+│   └── prediction modules
 │
 └── README.md
-Future Enhancements
+🚧 Current Status
 
-Real-time backend deployment
+The repository currently hosts the frontend prototype deployed on Vercel.
 
-Integration with LMS platforms
+Backend and ML engine deployment were designed but not deployed due to hackathon time constraints.
+
+However, the system architecture is ready for integration with:
+
+Node.js backend APIs
+
+Python ML drift detection engine
+
+🔮 Future Enhancements
+
+Planned improvements include:
+
+Real-time drift detection
+
+LMS integration
 
 Personalized learning recommendations
 
 Predictive student performance modeling
 
-Automated intervention suggestions
+AI-driven intervention suggestions
 
 Large-scale educational analytics
 
-Impact
+🎯 Impact
 
-EduDrift AI has the potential to transform digital education by enabling:
+EduDrift AI enables:
 
 Early detection of struggling students
 
-Adaptive learning experiences
-
-Personalized educational support
+Personalized learning experiences
 
 Data-driven teaching strategies
 
-By focusing on learning behavior instead of just results, EduDrift enables deeper educational insights.
+Improved student engagement monitoring
 
-Author
+By focusing on learning behavior instead of only results, EduDrift provides deeper educational insights.
 
-Developed as part of an AI / ML Hackathon Project focused on improving educational analytics and adaptive learning systems.
+👩‍💻 Author
 
-License
+Developed as part of an AI / ML Hackathon Project exploring intelligent educational analytics.
 
-This project is open for educational and research purposes.
+📜 License
+
+his project is open for educational and research purposes.
